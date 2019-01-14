@@ -1,0 +1,23 @@
+h1{
+  color: white;
+}
+
+body{
+  background-image: url(https://d1f5hsy4d47upe.cloudfront.net/35/3564a11b487c01d8341dd5da237c5833_t.jpeg
+);
+  background-size: cover;
+}
+p{color: pink;
+}
+
+div.LEVEL1{
+  float: left;
+}
+
+div.LEVEL2{
+  float: left;
+}
+
+body.kaito{
+  float: center;
+}
