@@ -3,7 +3,7 @@ var speed=1000;
 var gameFlag=false;
 var number;
 var maxNumber=0;
-var count=2;
+var count=3;
 var correctAns=0;
 var answr="";
 var correctCnt=0;
@@ -11,9 +11,8 @@ function sutarto() {
         if(gameFlag==false){
                 correctAns=0;
                 answr="";
-                document.getElementById('number').innerHTML="&nbsp;";
-                maxNumber=100*(correctCnt+1);
-                speed=1500;
+                document.getElementById('kazu').innerHTML="";
+                speed=800;
                 timer=setInterval("nextCount();", speed);
                 gameFlag=true;
         }
@@ -22,16 +21,17 @@ function nextCount() {
         if(count>=0){
                 number=Math.floor(Math.random()*maxNumber+1);
                 correctAns=correctAns+number;
-                document.getElementById('number').innerHTML=number;
+                document.getElementById('kazu').innerHTML=number;
                 count-=1;
         }
         else{
                 gameFlag=false;
                 clearInterval(timer);
-                document.getElementById('number').innerHTML="&nbsp;";
+                document.getElementById('kazu').innerHTML="&nbsp;";
                 count=2;
         }
 }
+
 
 function risetto() {
         answr="";

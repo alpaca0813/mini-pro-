@@ -11,9 +11,8 @@ function sutarto() {
         if(gameFlag==false){
                 correctAns=0;
                 answr="";
-                document.getElementById('number').innerHTML="&nbsp;";
-                maxNumber=100*(correctCnt+1);
-                speed=1500;
+                document.getElementById('kazu').innerHTML="";
+                speed=800;
                 timer=setInterval("nextCount();", speed);
                 gameFlag=true;
         }
